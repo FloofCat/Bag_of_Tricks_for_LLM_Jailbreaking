@@ -16,7 +16,7 @@ def load_prompts(instructions_path):
             targets.append(row["target"])
     return goals, targets
 
-def load_pert_goals(instructions_path):
+def load_goals(instructions_path):
     with open(instructions_path, "r", newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         pert_goal = []
